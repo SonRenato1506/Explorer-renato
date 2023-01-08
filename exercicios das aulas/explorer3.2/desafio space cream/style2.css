@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    color: #4A4E69;
+    gap: 10px;
+}
+
+header {
+    width: 25%;
+    background-color: #8E9AAF;
+    text-align: center;
+}
+
+h1 {
+    background-color: #CBC0D3;
+    color: #fff;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+
+}
+
+main {
+    width: 75%;
+    display: flex;
+    margin-left: 30px;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
+
+#paletas {
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete1.png");
+    height: 150px;
+    width: 220px;
+
+}
+
+
+#shakes {
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete2.png");
+    height: 350px;
+    width: 220px;
+}
+
+
+#massas {
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete3.png");
+    height: 150px;
+    width: 220px;
+}
+
+
+#picoles {
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete4.png");
+    height: 350px;
+    width: 220px;
+}

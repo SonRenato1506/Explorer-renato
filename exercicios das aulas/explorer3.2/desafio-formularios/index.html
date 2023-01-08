@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Avalie sua mentoria</h1>
+    <p>Chegou a hora de avaliar seu mentor. Bora lá?</p>
+
+    <img src="imagens/img1.png" alt="3 estrelas">
+  </header>
+  <div class="red">
+    <h2>Informações Pessoais</h2>
+  </div>
+
+  <div class="white">
+    <form action="">
+      <div class="one">
+        <div class="one-top">
+          <div>
+            <legend for="name">Nome</legend>
+            <input name="name" type="text">
+          </div>
+          <div>
+            <legend for="sobre">Sobrenome</legend>
+            <input name="sobre" type="text">
+          </div>
+        </div>
+
+        <legend for="email">Email <span>(Digite um email válido)</span></legend>
+        <input id="email" name="email" type="text">
+
+      </div>
+      <div class="two">
+        <h3>INFORMAÇÕES DO MENTOR</h3>
+        <hr>
+
+        <legend id="select" for="mentor">Selecione quem foi seu mentor</legend>
+        <select name="mentor" id="mentor">
+          <option value="mentor">Jeferson</option>
+          <option value="mentor">Betinho</option>
+          <option value="mentor">Laurão</option>
+        </select>
+
+        <legend id="select" for="feed">Feedback sobre o mentor</legend>
+        <textarea name="feed" id="feed" cols="30" rows="10"></textarea>
+
+        <div class="checkbox">
+
+          <input name="" type="checkbox">
+          <p>Todas as minhas dúvidas foram esclarecidas durante a mentoria</p>
+
+        </div>
+      </div>
+
+      <h3>Agendando próxima mentoria</h3>
+      <hr>
+
+      <div class="three">
+        <div>
+          <legend for="data">Data <span>(DD/MM/AAAA)</span></legend>
+          <input name="data" type="date">
+        </div>
+        <div class="time">
+          <div>
+            <legend for="das">Das</legend>
+            <input name="das" type="time">
+          </div>
+          <div>
+            <legend for="ate">Até</legend>
+            <input name="ate" type="time">
+
+          </div>
+        </div>
+      </div>
+    </form>
+    <button
+    class="button" 
+    type="submit" 
+    form="my-form"
+    value="Salvar evento">
+      Salvar
+    </button>
+  </div>
+</body>
+
+</html>

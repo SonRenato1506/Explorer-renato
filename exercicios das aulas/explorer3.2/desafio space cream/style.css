@@ -1,0 +1,103 @@
+body {
+    background-color: #e5e5e5;
+    text-align: center;
+    color: #4A4E69;
+}
+
+#retangulo {
+    width: 384px;
+    gap: 0;
+    background-color: #EFF1FF;
+    margin-left: 35%;
+}
+
+header {
+    background-color: #8E9AAF;
+    height: 279px;
+}
+
+#logo {
+    margin-top: 25px;
+}
+
+h1 {
+    background-color: #CBC0D3;
+    color: #fff;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+
+}
+
+main {
+    width: 320px;
+    margin-left: 30px;
+}
+
+#paletas {
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete1.png");
+    height: 240px;
+    width: 318px;
+
+}
+
+
+#shakes {
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete2.png");
+    height: 440px;
+    width: 318px;
+}
+
+
+#massas {
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete3.png");
+    height: 240px;
+    width: 318px;
+}
+
+
+#picoles {
+    padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    background-image: url("imgs/sorvete4.png");
+    height: 440px;
+    width: 318px;
+}
+
+
+
+h2 {
+   background-color: #FEEAFA ;
+   width: 111.3px; 
+   height: 35px;
+   border-radius: 20px;
+   font-family: 'Staatliches', cursive;
+   margin-left: 50%;
+   margin-top: 10px;
+}
+
+h2:hover {
+    height: 40px;
+    width: 115px;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 13px;
+}
+
+
+
+

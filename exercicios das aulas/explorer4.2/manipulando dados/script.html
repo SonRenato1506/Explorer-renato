@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Prototype
+
+        * prototype-based language
+        * prototype chain
+        * _proto_
+        */
+
+
+        /*
+            
+            Type conversion (typecasting) vs Type coersion
+            
+            * Alteração de um tipo de dado para outro tipo
+            
+        */
+
+        // console.log(Number('9') + 5)
+
+        // Manipulando Strings e Números
+
+        // Transformar String em Número e Número em String
+
+        /*
+        let string = "123"
+        Number(string)
+        let number = 321
+        String(number)
+        */
+
+        // Contar quantos caracteres tem uma palavra e quantos dígitos tem um número
+
+        /*
+        let word = "Caracteristicas"
+        console.log(word.length)
+
+        let number = '1234'
+        console.log(number.length)
+        */
+
+        // Transformar um número quebrado com 2 casas decimais e trocar ponto por vírgula
+
+        /*
+        let number = 479.124669134567890
+        console.log(number.toFixed(2).replace(".", ","))
+        */
+
+        // Transforme letras minúsculas em maíusculas. Faça o contrário disso também
+
+        /*
+        let word = "Programar é muito bacana!"
+        console.log(word.toLowerCase().toUpperCase)
+        */
+
+        // Separe um texto que contem espaços, em um novo array one cada texto é uma posição do array. Depois disso, tranforme o array em um texto e onde eram espaços, coloque _
+
+        
+        let phrase = "Eu quero viver, por favor me leve para o mar com vocês!"
+        let myArray = phrase.split(" ")
+        let phraseWithUnderScore = myArray.join("_")
+        console.log(phraseWithUnderScore)
+        
+
+        // Verificar se o texto contém a palavra Amor
+
+        /*
+        let phrase = "Eu quero viver o amor!"
+        console.log(phrase.includes("amor"))
+        */
+
+        // Criar Array com construtor
+
+        /*
+        let myArray = new Array('a', 'b', 'c')
+        console.log(myArray)
+        */
+
+        // Contar elementos de um array
+        //console.log(["a", "b", "c"].length)
+
+        // Transformar uma cadeia de caracteres em elementos de um array
+
+        /*
+        let word = "caracteristicas"
+        console.log(Array.from(word))
+        */
+
+        let techs = ["html", "css", "js"]
+
+        // Adcionar um item no fim
+        techs.push("nodejs")
+
+        // Adcionar no começo
+        techs.unshift("sql")
+
+        // Remover do fim
+        //techs.pop()
+
+        // Remover do começo
+        //techs.shift()
+        
+        // Pegar somente alguns elementos no Array
+        //console.log(techs.slice(1, 3))
+
+        // Remover 1 ou mais items em qualquer posição do Array
+        //techs.splice(1, 1)
+
+        //Encontrar a posição do elemento no Array
+        let index = techs.indexOf("css")
+        
+        console.log(index)
+    </script>
+</body>
+
+</html>

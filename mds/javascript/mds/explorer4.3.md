@@ -1,0 +1,2 @@
+- Alert("Alguma coisa") para aparecer na tela do html "Essa página diz alguma coisa"
+- Prompt(pergunta) para perguntar algo ao cliente
