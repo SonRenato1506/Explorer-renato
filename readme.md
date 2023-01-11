@@ -3,7 +3,7 @@
 Meus Sites:
 
 <div style="display: flex;">
-<div>
+<div style="margin: 10% 0;">
   <h1>RocketSeat Explorer</h1>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
@@ -31,14 +31,14 @@ Meus Sites:
 <br>
 </div>
 
-<div>
+<div style="margin: 10% 0;">>
 <h1>Curso em video</h1>
 
 <a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
 <br>
 
 </div>
-<div>
+<div style="margin: 10% 0;">>
 <h1>Outros</h1>
 <a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
 <br>
