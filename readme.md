@@ -38,7 +38,7 @@ Meus Sites:
 <br>
 
 </div>
-<div style="margin: 10% 0;">>
+<div style="margin: 0 10%;">>
 <h1>Outros</h1>
 <a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
 <br>
