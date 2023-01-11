@@ -1,46 +1,11 @@
 /* 
-  Crie uma lista de pacientes
+  Dada uma lista de pacientes, descubra o IMC de cada paciente e imprima
 
-  Cada paciente dentro da lista, deverá conter
-    nome
-    idade
-    peso
-    altura
+  "Paciente X possui o IMC de: Y"
 
-  Escreva uma lista contendo o nome dos pacientes
+  Onde X é o nome do paciente e Y é o IMC desse paciente
+
+  Crie uma função para fazer o cálculo de IMC
 */
 
-const patients = [
-    {
-        nome: "Renato",
-        idade: 14,
-        peso: 45,
-        altura: 1.78,  
-    },
-    {
-        nome: "Arthur",
-        idade: 0,
-        peso: 10,
-        altura: 0.60,
-    },
-    {
-        nome: "Mônica",
-        idade: 34,
-        peso: 70,
-        altura: 1.70,
-    },
-    {
-      nome: "Marcio",
-      idade: 35,
-      peso: 80,
-      altura: 1.83,
-    }
-]
-
-let patientsNames = []
-
-for(let patient of patients) {
-  patientsNames.push(patient.nome)
-}
-
-alert(patientsNames)
+/* peso / (altura * altura) */
