@@ -2,7 +2,9 @@
 
 Meus Sites:
 
-# RocketSeat Explorer
+<div style="display: flex;">
+<div>
+  <h1>RocketSeat Explorer</h1>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinos para você <span style="color: black;">(Somente para PC ou desktop)</span></a>
@@ -27,13 +29,17 @@ Meus Sites:
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/07/index.html">Listas</a>
 <br>
+</div>
 
-# Curso em vídeo
+<div>
+<h1>Curso em video</h1>
 
 <a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
 <br>
 
-# Outros
+</div>
+<div>
+<h1>Outros</h1>
 <a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
 <br>
 <a href="https://renato-matos-perfil.netlify.app/">Meu perfil</a>
@@ -41,3 +47,5 @@ Meus Sites:
 <a href="https://sonrenato1506.github.io/nlw-esports/">Meus gostos de games</a>
 <br>
 <a href="https://sonrenato1506.github.io/nlw-esports/index2.html">Meus gostos de filmes e séries</a>
+</div>
+<div>
