@@ -1,6 +1,4 @@
-
-
-- Renato Matos de Oliveira
+# Renato Matos de Oliveira
 
 Meus Sites:
 
@@ -28,3 +26,14 @@ Meus Sites:
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/07/index.html">Listas</a>
 <br>
+
+# Curso em vídeo
+
+<a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
+<br>
+
+# Outros
+<a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
+<a href="https://renato-matos-perfil.netlify.app/">Meu perfil</a>
+<a href="https://sonrenato1506.github.io/nlw-esports/">Meus gostos de games</a>
+<a href="https://sonrenato1506.github.io/nlw-esports/index2.html">Meus gostos de filmes e séries</a>
