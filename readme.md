@@ -5,13 +5,13 @@ Meus Sites:
 # RocketSeat Explorer
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinos para você (Somente PC ou Desktop)</a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinospara você <span style="color: black;">(Somente para PC ou desktop)</span></a>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/recriando-layout-desafio/index.html#">Rocket.sect (Somente PC ou Desktop)</a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/recriando-layout-desafio/indexhtml#">Rocket.sect <span style="color: black;">(Somente para PC ou desktop)</span></a>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/desafio-formularios/index.html">Avalie seu Mentor (Somente PC ou Desktop)</a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/desafio-formularios/indexhtml">Avalie seu Mentor <span style="color: black;">(Somente para PC ou desktop)</span></a>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto03/index.html">Eventos (Somente PC ou Desktop)</a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto03/index.html">Eventos<span style="color: black;">(Somente para PC ou desktop)</span></a>
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto05/index.html">Recentes trabalhos</a>
 <br>
