@@ -31,14 +31,14 @@ Meus Sites:
 <br>
 </div>
 
-<div style="margin: 0 10%;">>
+<div style="margin: 0 10%;">
 <h1>Curso em video</h1>
 
 <a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
 <br>
 
 </div>
-<div style="margin: 0 10%;">>
+<div style="margin: 0 10%;">
 <h1>Outros</h1>
 <a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
 <br>
