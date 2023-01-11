@@ -35,6 +35,9 @@ Meus Sites:
 
 # Outros
 <a href="https://fabulous-froyo-a56ecd.netlify.app/">RocketCoffee</a>
+<br>
 <a href="https://renato-matos-perfil.netlify.app/">Meu perfil</a>
+<br>
 <a href="https://sonrenato1506.github.io/nlw-esports/">Meus gostos de games</a>
+<br>
 <a href="https://sonrenato1506.github.io/nlw-esports/index2.html">Meus gostos de filmes e séries</a>
