@@ -3,7 +3,7 @@
 Meus Sites:
 
 <div style="display: flex;">
-<div style="margin: 10% 0;">
+<div style="margin: 0 10%;">
   <h1>RocketSeat Explorer</h1>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
@@ -31,7 +31,7 @@ Meus Sites:
 <br>
 </div>
 
-<div style="margin: 10% 0;">>
+<div style="margin: 0 10%;">>
 <h1>Curso em video</h1>
 
 <a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
