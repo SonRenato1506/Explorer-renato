@@ -1,8 +1,14 @@
 <style>
     *{
-      background-color: black;
-      color: white;
+      background-color: #0f1626;
+      color: #f5f5f5;
     }    
+    a {
+      color: white;
+    }
+    span{
+      color: #ab987a
+    }
 </style>
 
 <h1>Renato Matos de Oliveira</h1>
@@ -15,16 +21,16 @@
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinos para você <span style="color: white;">(Somente para PC ou desktop)</span></a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinos para você <span style>(Somente para PC ou desktop)</span></a>
 <br>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/recriando-layout-desafio/index.html#">Rocket.sect <span style="color: white;">(Somente para PC ou desktop)</span></a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/recriando-layout-desafio/index.html#">Rocket.sect <span style>(Somente para PC ou desktop)</span></a>
 <br>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/desafio-formularios/index.html">Avalie seu Mentor <span style="color: white;">(Somente para PC ou desktop)</span></a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/desafio-formularios/index.html">Avalie seu Mentor <span style>(Somente para PC ou desktop)</span></a>
 <br>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto03/index.html">Eventos<span style="color: white;">(Somente para PC ou desktop)</span></a>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto03/index.html">Eventos<span style>(Somente para PC ou desktop)</span></a>
 <br>
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto05/index.html">Recentes trabalhos</a>
