@@ -4,7 +4,7 @@
       color: #f5f5f5;
     }    
     a {
-      color: white;
+      color: #ff533d;
     }
     span{
       color: #ab987a
