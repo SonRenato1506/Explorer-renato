@@ -47,6 +47,7 @@
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/07/index.html">Listas</a>
 <br>
+<br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-extra/4.3/par-ou-impar/index.html">Calculadora</a>
 <br>
 </div>
