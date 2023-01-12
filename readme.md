@@ -8,7 +8,7 @@
       text-decoration: none;
       font-size: 16px;
     }
-    div> a:hover {
+    div a:hover {
       font-size: 22px;
     }
     
