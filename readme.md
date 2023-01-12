@@ -3,8 +3,9 @@
       background-color: #0f1626;
       color: #f5f5f5;
     }    
-    a {
+    div a {
       color: #ff533d;
+      text-decoration: none;
     }
     span{
       color: #ab987a
