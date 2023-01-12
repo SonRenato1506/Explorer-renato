@@ -6,7 +6,6 @@
     div a {
       color: #ff533d;
       text-decoration: none;
-      font-size: 16px;
     }
     div a:hover {
       font-size: 22px;
