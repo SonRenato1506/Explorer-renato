@@ -1,0 +1,1 @@
+.value para adquirir o valor de uma input
