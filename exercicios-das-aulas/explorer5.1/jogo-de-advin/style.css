@@ -17,11 +17,13 @@ body {
     display: grid;
     place-items: center;
 
-    height: 100vw;
+    height: 45vw;
 
 }
 
-body, input, button{
+body,
+input,
+button {
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -57,13 +59,14 @@ main {
 
 /* screen1 */
 
-h1{
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24rem;
     margin-bottom: 16rem;
 }
 
-h1, p {
+h1,
+p {
     color: #343558;
 }
 
@@ -77,7 +80,8 @@ form {
     justify-content: center;
 }
 
-input, button {
+input,
+button {
     border: none;
     padding: 16rem
 }
