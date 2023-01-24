@@ -68,6 +68,8 @@
 
 <a href="https://sonrenato1506.github.io/Curso-em-video/desafios/desafio10/Guanabara/android.html">Projeto Android</a>
 <br>
+<br>
+<a href="https://sonrenato1506.github.io/Projeto-Cordel/">Projeto Cordel</a>
 
 </div>
 <div style="margin: 0 10%;">
