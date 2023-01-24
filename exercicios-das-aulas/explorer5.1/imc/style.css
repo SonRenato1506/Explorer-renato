@@ -43,3 +43,22 @@ body  {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
     border-radius: 6rem;
 }
+
+.title {
+    font-size: 32rem;
+    line-height: 40rem;
+}
+
+form h1 {
+    margin-bottom: 32rem;
+}
+
+form label {
+    font-size: 14rem;
+    line-height: 18rem;
+    color: var(--tt-label);
+}
+
+form input {
+    width: 100%;
+}
