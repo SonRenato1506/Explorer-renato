@@ -13,6 +13,7 @@
     --tt-input: #212529;
     --ot-input: #02799D;
     --bd-input: rgba(73, 80, 87, 0.3);
+    --bg-input: #DCE2E9;
     --tt-placeholder: rgba(73, 80, 87, 0.5);
 
     --tt-button: white;
@@ -47,6 +48,7 @@ body  {
 .title {
     font-size: 32rem;
     line-height: 40rem;
+    color: var(--tt-heading);
 }
 
 form h1 {
@@ -57,8 +59,22 @@ form label {
     font-size: 14rem;
     line-height: 18rem;
     color: var(--tt-label);
+    margin-bottom: 8rem;
+    display: block;
 }
 
 form input {
     width: 100%;
+    border: 1px solid var(--bd-input);
+    background: var(--bg-input);
+    padding: 16rem;
+    border-radius: 4rem;
+}
+
+form input:focus {
+    outline: 1px solid var(--ot-input);
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 16rem;
 }
