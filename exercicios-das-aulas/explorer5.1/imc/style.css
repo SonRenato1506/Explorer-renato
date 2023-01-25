@@ -98,7 +98,7 @@ button {
     line-height: 20rem;
 }
 
-button {
+form button {
     margin-top: 32rem;
     padding: 16rem;
     width: 100%;
@@ -115,8 +115,59 @@ button {
     transition: background .3s;
 }
 
-button:hover {
+form button:hover {
     background: var(--bg-button-hover);
 }
 
-.modal-wrapper
+.modal-wrapper.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 16rem;
+    right: 16rem;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
+}
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.alert-error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-error);
+    text-align: center;
+    color: var(--tt-error);
+    padding: 8rem 0;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
