@@ -1,4 +1,4 @@
-import { Modal } from './modal.js'
+import { modal } from './modal.js'
 
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
@@ -7,9 +7,7 @@ const inputHeight = document.querySelector('#height')
 // const modalMessage = document.querySelector('.modal .title  span')
 // const modalBtnClose = document.querySelector('.modal button.close')
 
-
-
-form.onsubmit = (event) => {
+form.onsubmit = event => {
 
     event.preventDefault()
 
@@ -22,8 +20,6 @@ form.onsubmit = (event) => {
     modal.message.innerText = message
     modal.open()
 }
-
-
 
 function IMC(weight, height) {
     return (weight / ((height / 100) ** 2)).toFixed(2)
