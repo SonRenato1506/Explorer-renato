@@ -1,4 +1,4 @@
-import { modal } from './modal.js'
+// import { modal } from './modal.js'
 
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
