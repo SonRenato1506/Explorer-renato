@@ -34,7 +34,6 @@
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/04/index.html">Média de nota</a>
 <br>
-
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer5.1/imc/">Projeto IMC</a>
 <br>
