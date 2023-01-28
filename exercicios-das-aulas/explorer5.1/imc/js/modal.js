@@ -17,6 +17,7 @@ const modal = {
     closeError() {
         modal.error.classList.remove('open')
     },
+
 }
 
 
@@ -27,7 +28,7 @@ modal.BtnClose.onclick = () => {
 
 window.addEventListener('keydown', handleKeyDown)
 function handleKeyDown(event) {
-    if(event.key === "Escape") {
+    if (event.key === "Escape") {
         modal.close()
     }
 }
