@@ -25,18 +25,7 @@
   <h1>RocketSeat Explorer</h1>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto02/index.html">Treinos para você <span style>(Somente para PC ou desktop)</span></a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/recriando-layout-desafio/index.html#">Rocket.sect <span style>(Somente para PC ou desktop)</span></a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/desafio-formularios/index.html">Avalie seu Mentor <span style>(Somente para PC ou desktop)</span></a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto03/index.html">Eventos<span style>(Somente para PC ou desktop)</span></a>
-<br>
+
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto05/index.html">Recentes trabalhos</a>
 <br>
