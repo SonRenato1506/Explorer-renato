@@ -1,8 +1,12 @@
 <style>
-    *{
+     
+    body {
       background-color: #0f1626;
       color: #f5f5f5;
-    }    
+      width: 100%;
+      height: 100%;
+    }
+
     div a {
       color: #ff533d;
       text-decoration: none;
@@ -15,6 +19,8 @@
       color: #ab987a
     }
 </style>
+
+<body>
 
 <h1>Renato Matos de Oliveira</h1>
 
@@ -62,3 +68,6 @@
 <a href="https://sonrenato1506.github.io/nlw-esports/index2.html">Meus gostos de filmes e séries</a>
 </div>
 <div>
+
+
+</body>
