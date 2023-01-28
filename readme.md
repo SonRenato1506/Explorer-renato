@@ -68,6 +68,4 @@
 <a href="https://sonrenato1506.github.io/nlw-esports/index2.html">Meus gostos de filmes e séries</a>
 </div>
 <div>
-
-
 </body>
