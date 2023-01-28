@@ -25,7 +25,6 @@
   <h1>RocketSeat Explorer</h1>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer2.2/projeto01/index.html">Ambientes únicos para você</a>
 <br>
-
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto05/index.html">Recentes trabalhos</a>
 <br>
@@ -49,6 +48,9 @@
 <br>
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-extra/4.3/par-ou-impar/index.html">Calculadora</a>
+<br>
+<br>
+<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer5.1/imc/">Projeto IMC</a>
 <br>
 </div>
 
