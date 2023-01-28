@@ -29,26 +29,12 @@
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer3.2/projeto05/index.html">Recentes trabalhos</a>
 <br>
 <br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/01/index.html">Olá vc!</a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/02/index.html">Soma de dois números</a>
-<br>
-<br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/03/index.html">Calculadora básica</a>
 <br>
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/04/index.html">Média de nota</a>
 <br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/06/index.html">Adivinhe o número</a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer4.3/07/index.html">Listas</a>
-<br>
-<br>
-<a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-extra/4.3/par-ou-impar/index.html">Calculadora</a>
-<br>
+
 <br>
 <a href="https://sonrenato1506.github.io/Explorer-renato/exercicios-das-aulas/explorer5.1/imc/">Projeto IMC</a>
 <br>
