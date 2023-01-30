@@ -21,6 +21,7 @@ body {
     font-family: 'Roboto', sans-serif;
 
     display: grid;
+    min-height: 100vh;
 }
 
 button {
@@ -61,4 +62,14 @@ button svg {
 
     width: clamp(100rem, 100rem + 30vw, 228rem);
     height: clamp(80rem, 50rem + 10vw, 108rem);
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+footer {
+    align-self: end;
+    justify-self: end;
 }
