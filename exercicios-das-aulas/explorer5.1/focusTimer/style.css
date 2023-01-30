@@ -36,6 +36,8 @@ button:hover {
 #timer {
     font-size: clamp(40rem, 40rem + 10vw, 88rem);
     display: flex;
+
+    margin-bottom: 16rem;
 }
 
 .hide {
@@ -72,4 +74,6 @@ main {
 footer {
     align-self: end;
     justify-self: end;
+
+    padding: 0 40rem  32rem 0;
 }
