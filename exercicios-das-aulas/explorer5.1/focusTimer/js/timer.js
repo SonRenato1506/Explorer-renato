@@ -32,6 +32,5 @@ function updateTimerDisplay(minutes, seconds) {
   }
 
 
-//   export default updateTimerDisplay
-//   export default resetTimer
-  export default countdown
+
+  export {}
