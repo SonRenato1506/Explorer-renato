@@ -33,4 +33,4 @@ function updateTimerDisplay(minutes, seconds) {
 
 
 
-  export {}
+  export {countdown, resetTimer, updateTimerDisplay}
