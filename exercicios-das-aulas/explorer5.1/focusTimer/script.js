@@ -11,12 +11,20 @@ const secondsDisplay = document.querySelector('.seconds')
 function countdown(){
     setTimeout(function() {
       let seconds =  Number(secondsDisplay.textContent)
+      let minutes = Number(minutesDisplay.textContent)
   
       if( seconds <= 0 ) {
-        seconds = 60
+        seconds = 2
+
+        minutesDisplay.textContent = minutes - 1
+      }
+
+      if( minutes <= 0) {
+        return
+      
       }
   
-      secondsDisplay.textContent = seconds - 1
+      secondsDisplay.textContent = String(seconds - 1).padStart(2, "0")
       
       countdown()
     }, 1000)
