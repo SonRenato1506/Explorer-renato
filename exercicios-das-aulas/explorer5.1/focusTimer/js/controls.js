@@ -6,4 +6,8 @@ export function controls() {
     buttonSet.classList.remove('hide')
     buttonStop.classList.add('hide')
   }
+
+  return {
+    resetControls
+  }
 }
