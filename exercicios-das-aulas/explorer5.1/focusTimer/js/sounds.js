@@ -7,7 +7,12 @@ export default function () {
     function pressButton() {
         buttonPressAudio.play()
     }
-    
+
+    function timeEnd() {
+        kitchenTimer.play()
+    }
+
+
     return {
         bgAudio,
         pressButton,
