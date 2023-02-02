@@ -1,8 +1,6 @@
 import Controls from "./controls.js"
 import Timer from "./timer.js"
-import { elements } from "./elements.js"
-
-const {
+import {
   buttonPause,
   buttonPlay,
   buttonSet,
@@ -11,7 +9,7 @@ const {
   buttonStop,
   minutesDisplay,
   secondsDisplay
-} = elements
+} from "./elements.js"
 
 const controls = Controls({
   buttonPause,
