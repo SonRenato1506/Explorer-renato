@@ -12,7 +12,6 @@ import {
   secondsDisplay
 } from "./elements.js"
 
-
 const controls = Controls({
   buttonPause,
   buttonPlay,
