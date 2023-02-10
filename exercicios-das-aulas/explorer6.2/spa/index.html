@@ -7,14 +7,20 @@
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="pages/about.html">Sobre</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/error404.html">404</a>
+        <a href="#" onclick="route()">Home</a>
+        <a href="pages/about.html" onclick="route()">Sobre</a>
+        <a href="pages/contact.html" onclick="route()">Contact</a>
+        <a href="pages/error404.html" onclick="route()">404</a>
     </nav>
 
     <div id="app">
 
     </div>
+
+    <script>
+        function route(event) {
+            event = event || window.event
+        }
+    </script>
 </body>
 </html>
