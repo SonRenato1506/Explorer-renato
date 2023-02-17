@@ -1,4 +1,7 @@
-class Router {
+export class Router {
+
+    routes = {}
+
     add(routeName, page) {
         this.routes[routeName] = page
     }
@@ -11,6 +14,7 @@ class Router {
 
         this.handle()
     }
+
     handle() {
         const { pathname } = window.location
         const route = this.routes[pathname] || this.routes[404]
@@ -23,4 +27,3 @@ class Router {
     }
 }
 
-const router = new Router()
