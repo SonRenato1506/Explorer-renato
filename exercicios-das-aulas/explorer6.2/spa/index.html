@@ -40,7 +40,9 @@
             console.log("Antes do fetch")
             fetch(route)
             .then(data => data.text())
-            .then(html => console.log(html))
+            .then(html => {
+                document.querySelector('app')
+            })
             
             console.log(route)
         }    
