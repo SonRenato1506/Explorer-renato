@@ -1,10 +1,12 @@
 class Router {
+    add
+
     route(event) {
         event = event || window.event
         event.preventDefault()
-    
+
         window.history.pushState({}, "", event.target.href)
-    
+
         this.handle()
     }
     handle() {
@@ -16,6 +18,6 @@ class Router {
                 document.querySelector('#app').innerHTML = html
             })
     }
-    
+
 }
 
