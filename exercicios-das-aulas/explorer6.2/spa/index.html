@@ -46,7 +46,9 @@
             
             console.log(route)
         } 
-        handle()   
+        handle()  
+        
+        window.onpopstate = () => handle
     </script>
 </body>
 
