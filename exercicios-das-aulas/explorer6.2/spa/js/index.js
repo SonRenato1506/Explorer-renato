@@ -1,8 +1,9 @@
+import './router.js'
 const routes = {
-    "/":        "./pages/home.html"   ,
-    "/about":   "./pages/about.html"  ,
+    "/": "./pages/home.html",
+    "/about": "./pages/about.html",
     "/contact": "./pages/contact.html",
-    404:        "./pages/404.html"    ,
+    404: "./pages/404.html",
 }
 
 function route(event) {
@@ -15,15 +16,15 @@ function route(event) {
 }
 
 function handle() {
-    const  {pathname}  = window.location
+    const { pathname } = window.location
     const route = routes[pathname] || routes[404]
     fetch(route)
-    .then(data => data.text())
-    .then(html => {
-        document.querySelector('#app').innerHTML = html
-    })
-} 
-handle()  
+        .then(data => data.text())
+        .then(html => {
+            document.querySelector('#app').innerHTML = html
+        })
+}
+handle()
 
 window.onpopstate = () => handle()
 window.route = () => route()
