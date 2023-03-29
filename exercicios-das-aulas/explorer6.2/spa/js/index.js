@@ -1,6 +1,6 @@
 const routes = {
+    "/":        "./pages/home.html"   ,
     "/about":   "./pages/about.html"  ,
-    "/":    "./pages/home.html"   ,
     "/contact": "./pages/contact.html",
     404:        "./pages/404.html"    ,
 }
@@ -22,8 +22,6 @@ function handle() {
     .then(html => {
         document.querySelector('#app').innerHTML = html
     })
-    
-    console.log(route)
 } 
 handle()  
 
