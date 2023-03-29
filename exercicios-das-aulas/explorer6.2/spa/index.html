@@ -20,7 +20,7 @@
     <script>
         const routes = {
             "/about":   "./pages/about.html"  ,
-            "/home":    "./pages/home.html"   ,
+            "/":    "./pages/home.html"   ,
             "/contact": "./pages/contact.html",
             404:        "./pages/404.html"    ,
         }
@@ -41,11 +41,12 @@
             fetch(route)
             .then(data => data.text())
             .then(html => {
-                document.querySelector('#app')
+                document.querySelector('#app').innerHTML = html
             })
             
             console.log(route)
-        }    
+        } 
+        handle()   
     </script>
 </body>
 
