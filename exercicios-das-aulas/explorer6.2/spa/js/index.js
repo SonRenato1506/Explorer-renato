@@ -1,12 +1,12 @@
 import './router.js'
-const routes = {
-    "/": "./pages/home.html",
-    "/about": "./pages/about.html",
-    "/contact": "./pages/contact.html",
-    404: "./pages/404.html",
-}
+// const routes = {
+//     "/": "./pages/home.html",
+//     "/about": "./pages/about.html",
+//     "/contact": "./pages/contact.html",
+//     404: "./pages/404.html",
+// }
 
-handle()
+// handle()
 
-window.onpopstate = () => handle()
-window.route = () => route()
+// window.onpopstate = () => handle()
+// window.route = () => route()
