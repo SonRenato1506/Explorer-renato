@@ -1,4 +1,6 @@
-import './router.js'
+import Router from './router.js'
+const router = new Router()
+router.add()
 // const routes = {
 //     "/": "./pages/home.html",
 //     "/about": "./pages/about.html",
