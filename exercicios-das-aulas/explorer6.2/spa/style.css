@@ -1,0 +1,24 @@
+body {
+    background-image: url(./img/mountains-universe-1.png);
+    background-size: cover;
+    background-position: top;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#app {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+}
