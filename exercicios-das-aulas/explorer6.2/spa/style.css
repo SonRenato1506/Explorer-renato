@@ -19,6 +19,17 @@ nav {
 #app {
     position: absolute;
     display: block;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
+    text-align: absolute;
+    width: 30vw;
+}
+
+button {
+    background: none;
+    border-color: white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20%;
 }
