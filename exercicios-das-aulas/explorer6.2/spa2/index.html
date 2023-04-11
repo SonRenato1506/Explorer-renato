@@ -4,16 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Favorites</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
         <header>
             <h1>GitHub Favorites</h1>
-            <div>
-                <input type="text" placeholder="Usuário do GitHub">
+            <div id="search">
+                <label for="input-search">Usuário do GitHub</label>
+                <input id="input-search" type="text" placeholder="Usuário do GitHub">
+                <button>&plus;</button>
             </div>
         </header>
-        <table></table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositórios</th>
+                    <th>Seguidores</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/SonRenato1506.png" alt="Imagem de Renato Matos">
+                        <a href="https://github.com/SonRenato1506" target="_blank">
+                            <p>Renato Matos</p>
+                            <span>SonRenato1506</span>
+                        </a>
+                    </td>
+                    <td class="repositories">22</td>
+                    <td class="followers">4</td>
+                    <td><button>&times;</button></td>
+                </tr>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/MarcioTanan.png" alt="Imagem de Renato Matos">
+                        <a href="https://github.com/MarcioTanan" target="_blank">
+                            <p>Marcio Tanan</p>
+                            <span>MarcioTanan</span>
+                        </a>
+                    </td>
+                    <td class="repositories">16</td>
+                    <td class="followers">20</td>
+                    <td><button>&times;</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
