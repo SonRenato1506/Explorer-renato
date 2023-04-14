@@ -84,8 +84,10 @@ header h1 {
 }
 
 table {
+    margin-top: 30px;
     width: 100%;
     border-collapse: collapse;
+    box-shadow: 0 0 .4rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 table * {
@@ -108,10 +110,44 @@ table th:last-child {
     border-top-right-radius: .4rem;
 }
 
+table tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 td.user img{
     width: 5rem;
     height: 5rem;
 
     object-fit: cover;
     border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    color: red;
 }
