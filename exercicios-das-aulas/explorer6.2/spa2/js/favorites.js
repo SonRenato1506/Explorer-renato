@@ -3,25 +3,27 @@ export class Favorites {
         this.root = document.querySelector(root)
         this.load()
     }
+
+    load() {
+    
+        this.entries = [
+            {
+                login: 'sonrenato1506',
+                name: "Renato Matos",
+                public_repos: '22',
+                followers: '4'
+            },
+            {
+                login: 'maykbrito',
+                name: "Mayk Brito",
+                public_repos: '76',
+                followers: '120000'
+            }
+        ]
+    }
 }
 
-load() {
-    
-    this.entries = [
-        {
-            login: 'sonrenato1506',
-            name: "Renato Matos",
-            public_repos: '22',
-            followers: '4'
-        },
-        {
-            login: 'maykbrito',
-            name: "Mayk Brito",
-            public_repos: '76',
-            followers: '120000'
-        }
-    ]
-}
+
 
 export class FavoritesView extends Favorites {
     constructor(root) {
@@ -34,8 +36,8 @@ export class FavoritesView extends Favorites {
         this.removeAllTr()
 
 
-        entries.forEach(user => {
-            console.log(user)
+        this.entries.forEach(user => {
+            const row = this.createRow()
         })
     }
 
