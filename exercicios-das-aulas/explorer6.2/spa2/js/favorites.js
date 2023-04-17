@@ -14,12 +14,20 @@ export class Favorites {
                 followers: '4'
             },
             {
-                login: 'maykbrito',
-                name: "Mayk Brito",
-                public_repos: '76',
-                followers: '120000'
+                login: 'MarcioTanan',
+                name: "Marcio Tanan",
+                public_repos: '16',
+                followers: '19'
             }
         ]
+    }
+
+    delete(user) {
+        const filteredEntries = this.entries
+        .filter(entry => entry.login !== user.login)
+
+        this.entries = filteredEntries
+        this.uptade()
     }
 }
 
@@ -42,6 +50,18 @@ export class FavoritesView extends Favorites {
             const row = this.createRow()
             row.querySelector('.user img')
             .src = `https://github.com/${user.login}.png`
+            row.querySelector('.user img').alt = `Imagem de ${user.name}`
+            row.querySelector('.user p').textContent = user.name
+            row.querySelector('.user span').textContent = user.login
+            row.querySelector('.repositories').textContent = user.public_repos
+            row.querySelector('.followers').textContent = user.followers
+
+    //         row.querySelector('./remove').onclick = () => {
+    //             const isok = confirm('Tem certeza que deseja deletar essa linha?')
+    //             if(isok) {
+    //                 this.delete(user)
+    //             }
+    // }
             this.tbody.append(row)
         })
     }
