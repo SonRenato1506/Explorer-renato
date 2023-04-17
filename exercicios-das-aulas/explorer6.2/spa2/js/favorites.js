@@ -29,6 +29,8 @@ export class FavoritesView extends Favorites {
     constructor(root) {
         super(root)
 
+        this.tbody = this.root.querySelector("table tbody")
+
         this.uptade()
     }
 
@@ -38,7 +40,9 @@ export class FavoritesView extends Favorites {
 
         this.entries.forEach(user => {
             const row = this.createRow()
-            console.log(row)
+            row.querySelector('.user img')
+            .src = `https://github.com/${user.login}.png`
+            this.tbody.append(row)
         })
     }
 
@@ -61,9 +65,9 @@ export class FavoritesView extends Favorites {
     }
 
     removeAllTr() {
-        const tbody = this.root.querySelector("table tbody")
+       
 
-        tbody.querySelectorAll('tr')
+        this.tbody.querySelectorAll('tr')
             .forEach((tr) => {
 
                 tr.remove()
