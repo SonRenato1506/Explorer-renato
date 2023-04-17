@@ -38,6 +38,7 @@ export class FavoritesView extends Favorites {
 
         this.entries.forEach(user => {
             const row = this.createRow()
+            console.log(row)
         })
     }
 
