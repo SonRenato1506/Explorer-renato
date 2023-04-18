@@ -1,7 +1,26 @@
+export class GithubUser {
+    static search(username) {
+        const endpoint = `https://api.github.com/users/${username}`
+        return fetch(endpoint).then(data => data.json())
+            .then((data) => {
+                const { login, name, public_repos, followers } = data
+
+                return {
+                    login,
+                    name,
+                    public_repos,
+                    followers
+                }
+            })
+    }
+}
+
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root)
         this.load()
+
+        GithubUser.search('SonRenato1506').then(user => console.log(user))
     }
 
     load() {
@@ -11,7 +30,7 @@ export class Favorites {
 
     delete(user) {
         const filteredEntries = this.entries
-        .filter(entry => entry.login !== user.login)
+            .filter(entry => entry.login !== user.login)
 
         this.entries = filteredEntries
         this.uptade()
@@ -36,7 +55,7 @@ export class FavoritesView extends Favorites {
         this.entries.forEach(user => {
             const row = this.createRow()
             row.querySelector('.user img')
-            .src = `https://github.com/${user.login}.png`
+                .src = `https://github.com/${user.login}.png`
             row.querySelector('.user img').alt = `Imagem de ${user.name}`
             row.querySelector('.user p').textContent = user.name
             row.querySelector('.user span').textContent = user.login
@@ -45,10 +64,10 @@ export class FavoritesView extends Favorites {
 
             row.querySelector('.remove').onclick = () => {
                 const isOk = confirm('Tem certeza que deseja deletar essa linha?')
-                if(isOk) {
-                  this.delete(user)
+                if (isOk) {
+                    this.delete(user)
                 }
-              }
+            }
             this.tbody.append(row)
         })
     }
@@ -72,7 +91,7 @@ export class FavoritesView extends Favorites {
     }
 
     removeAllTr() {
-       
+
 
         this.tbody.querySelectorAll('tr')
             .forEach((tr) => {
