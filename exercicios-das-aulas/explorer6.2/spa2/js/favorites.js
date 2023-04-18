@@ -5,21 +5,8 @@ export class Favorites {
     }
 
     load() {
-    
-        this.entries = [
-            {
-                login: 'sonrenato1506',
-                name: "Renato Matos",
-                public_repos: '22',
-                followers: '4'
-            },
-            {
-                login: 'MarcioTanan',
-                name: "Marcio Tanan",
-                public_repos: '16',
-                followers: '19'
-            }
-        ]
+        this.entries = JSON.parse(localStorage.
+            getItem('#github-favorites:')) || []
     }
 
     delete(user) {
@@ -56,12 +43,12 @@ export class FavoritesView extends Favorites {
             row.querySelector('.repositories').textContent = user.public_repos
             row.querySelector('.followers').textContent = user.followers
 
-    //         row.querySelector('./remove').onclick = () => {
-    //             const isok = confirm('Tem certeza que deseja deletar essa linha?')
-    //             if(isok) {
-    //                 this.delete(user)
-    //             }
-    // }
+            row.querySelector('.remove').onclick = () => {
+                const isOk = confirm('Tem certeza que deseja deletar essa linha?')
+                if(isOk) {
+                  this.delete(user)
+                }
+              }
             this.tbody.append(row)
         })
     }
