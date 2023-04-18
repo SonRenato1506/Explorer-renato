@@ -46,7 +46,18 @@ export class FavoritesView extends Favorites {
         this.tbody = this.root.querySelector("table tbody")
 
         this.uptade()
+        this.onadd()
+
     }
+
+    onadd() {
+        const addButton = this.root.querySelector('.search button')
+        addButton.onClick = () => {
+            const {value} = this.root.querySelector('.search input')
+            console.log(value)
+        }
+    }
+    
 
     uptade() {
         this.removeAllTr()
