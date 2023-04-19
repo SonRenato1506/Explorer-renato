@@ -73,6 +73,7 @@ header h1 {
     background-color: var(--primary-color);
     border-radius: 0 .4rem .4rem 0;
     height: 3.2rem;
+    width: 3.2rem;
     border: none;
     padding: 0 1rem;
 
