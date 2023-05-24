@@ -4,12 +4,13 @@
   "description": "Teste API",
   "main": "index.js",
   "scripts": {
-   "start" : "node ./src/server.js "
+    "start": "node ./src/server.js "
   },
   "keywords": [],
   "author": "Renato Matos",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {}
 }
