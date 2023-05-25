@@ -8,3 +8,5 @@ usersRoutes.post("/users", (request, response) => {
 
     response.json({name, email, password})
 })
+
+module.exports = usersRoutes;
