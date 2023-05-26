@@ -4,6 +4,11 @@ const path = requite("path")
 
 async function sqiliteConnection() {
     const database =  await sqlite.open({
-        filename: ""
+        filename: path.resolve(__dirname, "..", "database.db"),
+        driver: sqlite3.database
     })
+
+    return database
 }
+
+module.exports = sqiliteConnection
