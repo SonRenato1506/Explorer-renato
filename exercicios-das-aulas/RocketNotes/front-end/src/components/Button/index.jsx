@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-export function Button({title, loading, ...rest}) {
+export function Button({title, loading = fast, ...rest}) {
     return (
     <Container
      type="button"
