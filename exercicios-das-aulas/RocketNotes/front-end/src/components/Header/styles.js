@@ -44,3 +44,9 @@ export const Profile = styled.div`
         }
     }
 `
+
+export const Logout = styled.button`
+    border: none;
+    background: none;
+
+`

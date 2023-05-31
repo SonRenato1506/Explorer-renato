@@ -1,8 +1,8 @@
-import {} from 'react-icons/ri'
-import { Container, Profile } from "./styles";
+import { RiShutDownLine } from 'react-icons/ri'
+import { Container, Profile, Logout } from "./styles";
 export function Header() {
     return (
-         <Container>
+        <Container>
             <Profile>
                 <img src="https://github.com/SonRenato1506.png" alt="Foto do usuário" />
                 <div>
@@ -10,6 +10,9 @@ export function Header() {
                     <strong>Renato Matos</strong>
                 </div>
             </Profile>
-         </Container>
+            <Logout>
+                <RiShutDownLine />
+            </Logout>
+        </Container>
     )
 }
