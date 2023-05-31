@@ -4,11 +4,11 @@ export const Container = styled.header`
     grid-area: header;
 
     height: 105px;
-    width: 100%;
+    width: 88vw;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
+    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ export const Profile = styled.div`
             color: ${({ theme }) => theme.COLORS.GRAY_100};
         }
 
-        strong {
+        span {
             font-size: 18px;
             color: ${({ theme }) => theme.COLORS.WHITE};
         }
@@ -49,4 +49,8 @@ export const Logout = styled.button`
     border: none;
     background: none;
 
+    >svg {
+        color:${({ theme }) => theme.COLORS.GRAY_100};
+        font-size: 36px;
+        }
 `
