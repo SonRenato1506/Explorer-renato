@@ -1,3 +1,4 @@
+import {} from 'react-icons/ri'
 import { Container, Profile } from "./styles";
 export function Header() {
     return (
