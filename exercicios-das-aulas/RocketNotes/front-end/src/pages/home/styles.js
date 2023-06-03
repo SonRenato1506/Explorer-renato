@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+`;
 export const Brand = styled.div``;
 export const Menu = styled.ul``;
 export const Search = styled.div``;
