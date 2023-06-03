@@ -21,20 +21,28 @@ export const Brand = styled.div`
     justify-content: center;
     align-items: center;
     border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+    >h1 {
+        font-size: 24px;
+        color: ${({theme}) => theme.COLORS.ORANGE};
+    }
 `;
 export const Menu = styled.ul`
     grid-area: menu;
-    background: green;
+    
 `;
 export const Search = styled.div`
     grid-area: search;
-    background: violet;
+    
 `;
 export const Content = styled.div`
     grid-area: content;
-    background: blue;
+    
 `;
 export const NewNote = styled.div`
     grid-area: newNote;
-    background: yellow;
+    
 `;
