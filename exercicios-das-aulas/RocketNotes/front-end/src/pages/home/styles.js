@@ -19,7 +19,8 @@ export const Brand = styled.div`
     grid-area: brand;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    border-bottom-width: 1px;
 `;
 export const Menu = styled.ul`
     grid-area: menu;
