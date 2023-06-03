@@ -1,8 +1,20 @@
-import  styled  from "styled-components";
+import { Container } from './styles'
 
-export const Container = styled.button`
-    width: 100%;
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
-    border: none;
+export function Note({data, ...rest}) {
+    <Container {...rest}>
+        <h1>{data.title}</h1>
 
-`
+        {
+            data.tags &&
+            <footer>
+                {
+                    data.tags.map(tag =>{
+                        <span key={tag.id}>
+                            {tag.name}
+                        </span>
+                    })
+                }
+            </footer>
+        }
+    </Container>
+}
