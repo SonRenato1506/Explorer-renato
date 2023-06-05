@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
 
-    display: grid;
+    /* display: grid; */
     grid-template-rows: 105px auto;
 
     grid-template-areas:
@@ -21,5 +21,11 @@ export const Form = styled.form`
         align-items: center;
         justify-content: space-between;
         
+        margin-bottom: 33px;
+
+        a {
+            font-size: 20px;
+            color: ${({theme}) => theme.COLORS.GRAY_100};
+        }
     }
 `
