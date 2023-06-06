@@ -38,11 +38,11 @@ export function Home() {
                 </Section>
             </Content>
 
-            <NewNote>
-                <Link to="/new">
+            <NewNote to="/new">
+                
                     <FiPlus />
                     Criar nota
-                </Link>
+                
             </NewNote>
 
         </Container>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     width: 100vw;
@@ -55,10 +56,11 @@ export const Content = styled.div`
     overflow-y: auto;
 `;
 
-export const NewNote = styled.div`
+export const NewNote = styled(Link)`
     grid-area: newNote;
 
     background-color: ${({ theme }) => theme.COLORS.ORANGE}    ;
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_900}    ;
     border: none;
     display: flex;
     align-items: center;
