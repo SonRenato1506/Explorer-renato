@@ -4,7 +4,7 @@ export const Container = styled.header`
     grid-area: header;
 
     height: 105px;
-    width: 88vw;
+    max-width: 88vw;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -21,7 +21,7 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
 
-    > img {
+     img {
         width: 56px;
         height: 56px;
         border-radius: 50%;

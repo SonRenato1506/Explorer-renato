@@ -4,6 +4,7 @@ import { Button } from "../../components/Button"
 import { Section } from "../../components/Section"
 import { ButtonText } from "../../components/ButtonText"
 import { Tag } from "../../components/Tag"
+import { Link } from "react-router-dom"
 export function Details() {
   return (
     <Container>
@@ -12,12 +13,12 @@ export function Details() {
         <Content>
           <ButtonText title="Excluir nota" />
           <h1>Introdução ao React</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quasi dolores deleniti optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore. Dignissimos repellendus, 
-            provident veritatis blanditiis qui autem consequatur. optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore. 
-            Dignissimos repellendus, provident veritatis blanditiis qui autem consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Accusantium ducimus asperiores quasi dolor consequuntur unde illum libero earum autem commodi in at blanditiis, itaque nobis ad dolorem 
-            voluptas temporibus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium incidunt itaque voluptate, 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi dolores deleniti optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore. Dignissimos repellendus,
+            provident veritatis blanditiis qui autem consequatur. optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore.
+            Dignissimos repellendus, provident veritatis blanditiis qui autem consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium ducimus asperiores quasi dolor consequuntur unde illum libero earum autem commodi in at blanditiis, itaque nobis ad dolorem
+            voluptas temporibus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium incidunt itaque voluptate,
             in voluptatibus quisquam enim dolor optio nihil hic ea accusantium perspiciatis beatae, aliquid dolorum quasi similique obcaecati?</p>
           <Section title="Links Úteis">
             <Links>
@@ -30,7 +31,9 @@ export function Details() {
             <Tag title="node" />
           </Section>
 
-          <Button title="Voltar" />
+          <Link to="/">
+            <Button title="Voltar" />
+          </Link>
 
         </Content>
       </main>

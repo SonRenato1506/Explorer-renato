@@ -1,5 +1,6 @@
 import { FiPlus } from "react-icons/fi"
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles"
+import { Link } from "react-router-dom";
 
 import { Section } from "../../components/Section";
 import { Note } from "../../components/Note/index";
@@ -20,24 +21,30 @@ export function Home() {
                 <li><ButtonText title="Node" /></li>
             </Menu>
             <Search>
-                <Input placeholder="Pesquisar pelo título"/>
+                <Input placeholder="Pesquisar pelo título" />
             </Search>
             <Content>
                 <Section title="Minhas notas">
-                    <Note data={{
-                        title: "React",
-                       tags: [
-                            {id: "1", name: "react"},
-                            {id: "2", name: "rocketseat"}
-                        ] 
-                    }}/>
-                    
+                    <Link to="details/1">
+                        <Note data={{
+                            title: "React",
+                            tags: [
+                                { id: "1", name: "react" },
+                                { id: "2", name: "rocketseat" }
+                            ]
+                        }} />
+                    </Link>
+
                 </Section>
             </Content>
+
             <NewNote>
-                <FiPlus />
-                Criar nota
+                <Link to="/new">
+                    <FiPlus />
+                    Criar nota
+                </Link>
             </NewNote>
+
         </Container>
     )
 }
