@@ -17,10 +17,16 @@ export function New() {
                         <a href="/">voltar</a>
                     </header>
                     <Input placeholder="Titulo" />
-                    <Textarea placeholder="Observações"/>
+                    <Textarea placeholder="Observações" />
                     <Section title="Links Úteis">
-                            <NoteItem value="https://rocketseat.com.br"/>
-                            <NoteItem isNew/>
+                        <NoteItem value="https://rocketseat.com.br" />
+                        <NoteItem isNew placeholder="Novo Link" />
+                    </Section>
+                    <Section title="Marcadores">
+                        <div className="tags">
+                            <NoteItem value="react" />
+                            <NoteItem isNew placeholder="Nova Tag" />
+                        </div>
                     </Section>
                 </Form>
             </main>
