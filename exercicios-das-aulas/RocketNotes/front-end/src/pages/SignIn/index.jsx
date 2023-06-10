@@ -1,15 +1,21 @@
+import { useState } from "react";
 import { Container, Form, Background } from "./styles";
 import { FiMail, FiLock } from "react-icons/fi"
 import { Link } from "react-router-dom";
 
-import { MyContent } from "../../hooks/auth";
+import { useAuth } from "../../hooks/auth";
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 
-const data = useContext(MyContent)
-console.log("Meu contato =>", data)
-
 export function SignIn() {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const { signIn} = useAuth()
+
+    function handleSingIn() {
+        signIn({email, password})
+    }
     return (
         <Container>
             <Form>
@@ -21,22 +27,24 @@ export function SignIn() {
                     placeholder="E-mail"
                     type="text"
                     icon={FiMail}
+                    onChange={e=> setEmail(e.targer.value)}
                 />
                 <Input
                     placeholder="Senha"
                     type="password"
                     icon={FiLock}
+                    onChange={e=> setPassword(e.targer.value)}
                 />
 
-                <Button title="Entrar"/>
+                <Button title="Entrar" onClick={handleSingIn}/>
 
                 <Link to="/register">
                     Criar Conta
                 </Link>
-                   
+
             </Form>
-            
-            <Background/>
+
+            <Background />
         </Container>
     )
 }
