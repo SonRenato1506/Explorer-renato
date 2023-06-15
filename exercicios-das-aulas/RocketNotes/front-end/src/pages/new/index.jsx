@@ -39,15 +39,43 @@ export function New() {
         setTags(prevState => prevState.filter(tag => tag !== deleted))
     }
 
-    async function handleNewNote(){
-    
-        await api.post("/notes", {
+    async function handleNewNote() {
+        if (!title) {
+            return alert("Digite o título da nota")
+        }
+
+        if (!description) {
+            return alert("Digite a descrição")
+        }
+
+        if (!links) {
+            return alert("Digite os link da nota")
+        }
+
+        if (!tags) {
+            return alert("Digite as tags da nota")
+        }
+
+
+        if (newLink) {
+            return alert("Você deixou um link no campo para adcionar, mas não clicou em adcionar. Clique para adcionar ou deixe o campo vazio.")
+        }
+
+        if (newTag) {
+            return alert("Você deixou uma tag no campo para adcionar, mas não clicou em adcionar. Clique para adcionar ou deixe o campo vazio.")
+        }
+
+
+
+
+
+        await api.post("/notes/", {
             title,
             description,
             tags,
             links
         })
-        
+
         alert("Nota criada com sucesso")
         navigate("/")
     }
