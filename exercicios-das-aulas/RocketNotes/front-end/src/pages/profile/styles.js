@@ -14,6 +14,10 @@ export const Container = styled.div`
         align-items: center;
 
         padding: 0 124px;
+
+        span {
+            cursor: pointer
+        }
        
 
         svg {

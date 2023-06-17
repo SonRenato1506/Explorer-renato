@@ -7,6 +7,10 @@ import { Button } from "../../components/Button"
 import { api } from "../../services/api"
 import { useAuth } from "../../hooks/auth"
 import avatarPlaceholder from "../../assets/avatar_placeholder.svg"
+import { ButtonText } from "../../components/ButtonText"
+import { useNavigate } from "react-router-dom";
+
+
 
 
 export function Profile() {
@@ -16,37 +20,45 @@ export function Profile() {
     const [email, setEmail] = useState(user.email)
     const [passwordOld, setPasswordOld] = useState()
     const [passwordNew, setPasswordNew] = useState()
+    const navigate = useNavigate()
 
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
     const [avatar, setAvatar] = useState(avatarUrl)
     const [avatarFile, setAvatarFile] = useState(null)
 
+    function handleBack() {
+        navigate(-1)
+    }
+
     async function handleUpdate() {
 
-        const user = {
+        const updated = {
             name,
             email,
             password: passwordNew,
             old_password: passwordOld
         }
-        await updateProfile({ user, avatarFile })
+        const userUpdated = Object.assign(user, updated)
+        
+        await updateProfile({ user: userUpdated, avatarFile })
     }
 
-    function handleChangeAvatar(event){
+    function handleChangeAvatar(event) {
         const file = event.target.files[0]
         setAvatarFile(file)
-   
+
         const imagePreview = URL.createObjectURL(file)
         setAvatar(imagePreview)
-     }
+    }
 
     return (
         <Container>
-            
+
             <header>
-                <Link to=-1>
+                <span type="button" onClick={handleBack}>
                     <FiArrowLeft />
-                </Link>
+                </span>
+
             </header>
             <Form>
                 <Avatar>

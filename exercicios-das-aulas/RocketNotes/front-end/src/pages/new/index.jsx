@@ -5,10 +5,10 @@ import { NoteItem } from "../../components/NoteItem"
 import { Section } from "../../components/Section"
 import { Button } from "../../components/Button"
 import { Container, Form } from "./styles"
-import { Link } from "react-router-dom"
 import { useState } from "react"
 import { api } from "../../services/api"
 import { useNavigate } from "react-router-dom"
+import { ButtonText } from "../../components/ButtonText"
 
 
 export function New() {
@@ -39,6 +39,10 @@ export function New() {
     function handleRemoveTag(deleted) {
         setTags(prevState => prevState.filter(tag => tag !== deleted))
     }
+
+    function handleBack() {
+        navigate(-1)
+      }
 
     async function handleNewNote() {
         if (!title) {
@@ -77,6 +81,8 @@ export function New() {
             links
         })
 
+
+
         alert("Nota criada com sucesso")
         navigate(-1)
     }
@@ -90,8 +96,7 @@ export function New() {
                     <header>
 
                         <h1>Criar Nota</h1>
-                        <Link to="/">voltar</Link>
-
+                        <ButtonText title="Voltar" onClick={handleBack}/>
                     </header>
 
                     <Input
