@@ -44,7 +44,7 @@ export function Profile() {
         <Container>
             
             <header>
-                <Link to="/">
+                <Link to=-1>
                     <FiArrowLeft />
                 </Link>
             </header>
