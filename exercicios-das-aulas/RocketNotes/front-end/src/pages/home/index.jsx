@@ -1,6 +1,6 @@
 import { FiPlus } from "react-icons/fi"
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Section } from "../../components/Section";
 import { Note } from "../../components/Note/index";
@@ -14,9 +14,14 @@ export function Home() {
     const [tagsSelected, setTagsSelected] = useState([])
     const [search, setSearch] = useState("")
     const [notes, setNotes] = useState([])
+    const navigate = useNavigate()
 
 
     function handleTagSelected(tagName) {
+        if (tagName === "all") {
+            return setTagsSelected([])
+        }
+
         const alreadySelected = tagsSelected.includes(tagName)
 
         if (alreadySelected) {
@@ -28,6 +33,9 @@ export function Home() {
 
     }
 
+    function handleDetails(id) {
+        navigate(`/details/${id}`)
+    }
 
     useEffect(() => {
 
@@ -79,22 +87,23 @@ export function Home() {
             <Search>
                 <Input
                     placeholder="Pesquisar pelo título"
-                    onChange={() => setSearch(e.target.value)}
+                    onChange={(e) => setSearch(e.target.value)}
                 />
             </Search>
             <Content>
                 <Section title="Minhas notas">
-                    <Link to="details/1">
-                        {
 
-                            notes.map(note => (
-                                <Note
-                                    key={String(note.id)}
-                                    data={note}
-                                />
-                            ))
-                        }
-                    </Link>
+                    {
+
+                        notes.map(note => (
+                            <Note
+                                key={String(note.id)}
+                                data={note}
+                                onClick={() => handleDetails(note.id)}
+                            />
+                        ))
+                    }
+
 
                 </Section>
             </Content>

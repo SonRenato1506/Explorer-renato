@@ -33,6 +33,7 @@ export function New() {
 
     function handleAddTag() {
         setTags(prevState => [...prevState, newTag])
+        setNewTag("")
     }
 
     function handleRemoveTag(deleted) {

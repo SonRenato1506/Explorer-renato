@@ -5,38 +5,96 @@ import { Section } from "../../components/Section"
 import { ButtonText } from "../../components/ButtonText"
 import { Tag } from "../../components/Tag"
 import { Link } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { api } from "../../services/api"
+
 export function Details() {
+
+  const [data, setData] = useState(null)
+  const params = useParams()
+  const navigate = useNavigate()
+
+  function handleBack() {
+    navigate("/")
+  }
+
+  async function handleRemove() {
+    const confirm = window.confirm("Deseja realmente remover a rota?")
+
+    if(confirm) {
+      await api.delete(`/notes/${params.id}`)
+      navigate("/")
+    }
+  }
+
+  useEffect(() => {
+    async function fetchNote() {
+      const response = await api.get(`/notes/${params.id}`)
+      setData(response.data)
+    }
+
+    fetchNote()
+  }, [])
+
+
+
   return (
+
     <Container>
+
       <Header />
-      <main>
-        <Content>
-          <ButtonText title="Excluir nota" />
-          <h1>Introdução ao React</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quasi dolores deleniti optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore. Dignissimos repellendus,
-            provident veritatis blanditiis qui autem consequatur. optio expedita vitae totam, ipsa molestias, numquam eveniet, doloribus accusamus tempore.
-            Dignissimos repellendus, provident veritatis blanditiis qui autem consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium ducimus asperiores quasi dolor consequuntur unde illum libero earum autem commodi in at blanditiis, itaque nobis ad dolorem
-            voluptas temporibus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium incidunt itaque voluptate,
-            in voluptatibus quisquam enim dolor optio nihil hic ea accusantium perspiciatis beatae, aliquid dolorum quasi similique obcaecati?</p>
-          <Section title="Links Úteis">
-            <Links>
-              <li><a href="#">https://www.rocketseat.com.br</a></li>
-              <li><a href="#">https://www.rocketseat.com.br</a></li>
-            </Links>
-          </Section>
-          <Section title="Marcadores">
-            <Tag title="express" />
-            <Tag title="node" />
-          </Section>
 
-          <Link to="/">
-            <Button title="Voltar" />
-          </Link>
+      {
+        data &&
+        <main>
 
-        </Content>
-      </main>
+          <Content>
+
+            <ButtonText title="Excluir nota" onClick={handleRemove} />
+
+            <h1>{data.title}</h1>
+            <p>{data.description}</p>
+
+            {
+              data.links &&
+              <Section title="Links Úteis">
+                <Links>
+                  {
+                    data.links.map(link => (
+                      <li key={String(link.id)}>
+                        <a href={link.url} target="_blank">
+                          {link.url}
+                        </a>
+                      </li>
+                    ))
+                  }
+
+                </Links>
+              </Section>
+            }
+
+            {
+              data.tags &&
+              <Section title="Marcadores">
+                {
+                    data.tags.map(tag => (
+                  
+                  <Tag key={String(tag.id)} title={tag.name} />
+
+                    ))
+                }
+
+              </Section>
+            }
+
+            <Link to="/">
+              <Button title="Voltar" onClick={handleBack}/>
+            </Link>
+
+          </Content>
+        </main>
+      }
     </Container>
   )
 }
