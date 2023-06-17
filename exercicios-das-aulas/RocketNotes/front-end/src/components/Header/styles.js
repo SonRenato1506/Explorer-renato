@@ -5,7 +5,7 @@ export const Container = styled.div`
     grid-area: header;
 
     height: 105px;
-    max-width: 88vw;
+    max-width: 85vw;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
