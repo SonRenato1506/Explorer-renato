@@ -1,8 +1,8 @@
 module.exports = {
   bail: true,
-  covarageProvider: "v8",
+  coverageProvider: "v8",
 
-  testMatcg: [
+  testMatch: [
     "<rootDir>/src/**/*.spec.js"
   ],
 }
